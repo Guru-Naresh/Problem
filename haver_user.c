@@ -3,12 +3,11 @@
 void main()
 {
     float lat1,lat2,long1,long2;
-    //float lat1_rad,lat2_rad,long1_rad,long2_rad;
     float dlat,dlong,term,radius = 6378.1,distance;
 
-    printf("Enter the latitude & longitude of Source: ");
+    printf("Enter the Co-ordinates of Source: ");
     scanf("%f %f",&lat1,&long1);    
-    printf("Enter the latitude & longitude of Destination: ");
+    printf("Enter the Co-ordinates of Destination: ");
     scanf("%f %f",&lat2,&long2); 
    
     lat1 = lat1 * M_PI /180;
