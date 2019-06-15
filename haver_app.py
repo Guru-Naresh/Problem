@@ -29,19 +29,19 @@ def proces():
 window = tkinter.Tk()                              #Creating Window
 window.title('Haversine Calculator')
 
-L1 = Label(window,text="Source Co-ordinates:")     #Labels of Entries
+L1 = Label(window,text="Source Co-ordinates:",font='Arial,25,Bold')     #Labels of Entries
 L1.grid(row=0,column=0,sticky=W)
 L2 = Label(window,text="Latitude (in deg)")
 L2.grid(row=1,column=0,sticky=W)
 L3 = Label(window,text="Longitude (in deg)")
 L3.grid(row=2,column=0,sticky=W)
-L4 = Label(window,text="Destination Co-ordinates:")
+L4 = Label(window,text="Destination Co-ordinates:",font='Arial,25,Bold')
 L4.grid(row=3,column=0,sticky=W)
 L5 = Label(window,text="Latitude (in deg)")
 L5.grid(row=4,column=0,sticky=W)
 L6 = Label(window,text="Longitude (in deg)")
 L6.grid(row=5,column=0,sticky=W)
-L7 = Label(window,text="Distance (in KM)")
+L7 = Label(window,text="Distance (in KM)",bg='light green',font='Arial,25,Bold')
 L7.grid(row=6,column=0,sticky=W)
 
 E1 = Entry(window,bd=5)                            #Entries for Inputs
@@ -52,10 +52,10 @@ E3 = Entry(window,bd=5)
 E3.grid(row=4,column=1)
 E4 = Entry(window,bd=5)
 E4.grid(row=5,column=1)
-E5 = Entry(window,bd=5)
+E5 = Entry(window,bd=5,bg='yellow')
 E5.grid(row=6,column=1)
                                                    #Button to submit
-B = Button(window,text="Submit",bd=5,command=proces) 
+B = Button(window,text="Submit",bd=5,command=proces,activebackground='light green') 
 B.grid(row=7,column=1)
 
 window.mainloop()
